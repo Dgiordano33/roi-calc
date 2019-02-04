@@ -4,143 +4,105 @@
 }
 
 .App-header {
-  background-color: #282c34;
-  height: 10vh;
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-  align-items: center;
-  color: white;
+    background-color: #173647;
+    height: 65px;
+    width: 100%;
+    z-index: 999;
+    display: flex;
 }
 
 .header-container {
   padding: 10px;
+  object-fit: contain;
 }
 
-.title {
-  text-align: left;
+.navbar-brand svg {
+    height: 28.75px;
+    margin-top: -10px;
+}
+svg {
+    overflow: hidden;
+    vertical-align: middle;
 }
 
-.description {
-  text-align: right;
-  font-weight: normal;
-  font-size: 16px;
-  max-width: 50vw;
+.logo-text {
+  fill:#fff;
 }
+  .logo-icon {
+fill:#ff730b;
+                }
 
 .App-logo {
-  /* height: 80%; */
+  height: 8vh;
 }
 
 .App-body {
-  width: 100vw;
-  max-height: 90vh;
-  position: absolute;
-  overflow-y: scroll;
-  display: flex;
-  flex-direction: row;
+    width: 100vw;
+    max-height: 90vh;
+    position: absolute;
+    overflow-y: scroll;
+    display: flex;
+    flex-direction: row;
+    background-color: #758491;
+    color: #fff! important;
+    padding: 2em;
 }
 
-.config-column {
-  width: 30%;
-  /* border-right: 1px solid black; */
-  background-color: #FFFFFF;
+.display-1,
+.display-2,
+.display-3,
+.display-4,
+.display-5 {
+    font-family: "Roboto Mono",monospace;
+    font-weight: 400;
+    -webkit-font-smoothing: antialiased;
+    -moz-font-smoothing: antialiased;
+    -o-font-smoothing: antialiased;
 }
 
-.project-column-container {
-  width: 40%;
-  height: 100%;
+.display-1 {
+    font-size: 2.5rem;
+    margin:.25em 0 0em 0;
+    text-align: left;   
+  }
+
+  .ab-orange::after, .webinar-page .webinar-title::after {
+    content: " ";
+    background-color: #ff8f0f!important;
+    margin: 50px 0 16px;
+    height: 4px;
+    width: 120px;
+    display: block;
 }
 
-.savings-column-container {
-  width: 30%;
-  height: 100%;
-  padding: 30px;
-}
-
-.savings-column {
+.App-body table{
+  box-shadow: 0 2px 5px rgba(0,0,0,0.1), 0 2px 5px rgba(0,0,0,0.2);
+  border-collapse: collapse;
+  border-radius: 0px;
   width: 100%;
-}
-
-.org-column {
-  padding: 30px;
-}
-
-.org-column h1 {
-  margin: 0;
-}
-
-.project-column {
-  padding: 30px;
-  /* overflow-y: scroll; */
-}
-
-.project-column h1 {
-  margin: 0;
-}
-
-.savings-column h1 {
-  margin: 0;
+  color: white;
+  background: #173647;
 }
 
 .salary-table table {
-  background-color: #282c34;
-  color: white;
-  width: 100%;
   margin-bottom: 60px;
   margin-top: 30px;
-  border-collapse: collapse;
-  border-radius: 10px;
-  box-shadow: 0 2px 5px rgba(0,0,0,0.1), 0 2px 5px rgba(0,0,0,0.2);
 }
 
 .role-table table {
-  background-color: #282c34;
-  color: white;
-  width: 100%;
-  border-collapse: collapse;
-  border-radius: 10px;
-  box-shadow: 0 2px 5px rgba(0,0,0,0.1), 0 2px 5px rgba(0,0,0,0.2);
-}
-
-.total-row td {
-  border-top: 2px solid #85EA2D;
-  font-weight: bold;
-}
-
-td {
-  padding: 10px;
-  /* text-align: left; */
-}
-
-th {
-  padding: 10px;
-  border-bottom: 2px solid #85EA2D;
-}
-
-input {
-  padding: 5px;
-  font-size: 14px;
-  border-radius: 5px;
-  border: 1px solid grey;
-  margin-left: 5px;
-  max-width: 75px;
-  text-align: center;
-  letter-spacing: .1em;
 }
 
 .project-table table {
-  background-color: #282c34;
-  color: white;
-  width: 100%;
   margin-bottom: 60px;
   margin-top: 30px;
-  border-collapse: collapse;
-  border-radius: 10px;
-  box-shadow: 0 2px 5px rgba(0,0,0,0.1), 0 2px 5px rgba(0,0,0,0.2);
 }
 
-.project-table td:nth-child(2) {
+.savings-table table {
+  margin-bottom: 60px;
+  margin-top: 30px;
+}
+
+.project-table td:nth-child(3) {
   border-left: 1px solid #49515f;
 }
 
@@ -148,14 +110,41 @@ input {
   border-left: 1px solid #49515f;
 }
 
-.sub-head {
-  font-size: 11px;
+.total-row td {
+  border-top: 2px solid #ff8f0f;
+  font-weight: bold;
+}
+
+td {
+  padding: 10px;
 }
 
 .header-row td {
-  border-bottom: 2px solid #85EA2D;
+  border-bottom: 2px solid #ff8f0f;
   font-weight: bold;
   text-align: left;
+}
+
+th {
+    padding: 10px 2px;
+    border-bottom: 2px solid #ff8f0f;
+    font-size: 14px;
+}
+
+input {
+    padding: 3px 0px;
+    font-size: 14px;
+    border-radius: 2px;
+    border: 0px solid grey;
+    margin-left: 0px;
+    max-width: 51%;
+    text-align: center;
+    letter-spacing: .1em;
+}
+
+
+.sub-head {
+  font-size: 11px;
 }
 
 .task-column {
@@ -163,32 +152,37 @@ input {
 }
 
 .with-swaggerhub {
-  /* background-color: #adf173; */
-  color: #85EA2D;
-  
+  color: #ff8f0f;
+  font-weight:700;
 }
 
-.task-desc {
-  font-size: 11px;
-  text-align: left;
+.full-block {
+  background-color: #ff8f0f;
+  color: #282c34;
 }
 
-.savings-table table {
-  background-color: #282c34;
-  color: white;
+.project-table td a {
+  display: block;
   width: 100%;
-  margin-bottom: 60px;
-  margin-top: 30px;
-  border-collapse: collapse;
-  border-radius: 10px;
-  box-shadow: 0 2px 5px rgba(0,0,0,0.1), 0 2px 5px rgba(0,0,0,0.2);
+  color: white;
 }
+
+.project-table td a:hover {
+  color: #ff8f0f;
+  cursor: pointer;
+}
+
+.project-table a:visited {
+  color: white;
+}
+
+
 
 .savings-calc-button {
   width: 40%;
   margin: auto;
-  border-radius: 10px;
-  background-color: #85EA2D;
+  border-radius: 4px;
+  background-color: #ff8f0f;
   padding: 10px;
   box-shadow: 0 2px 5px rgba(0,0,0,0.1), 0 2px 5px rgba(0,0,0,0.2);
 }
@@ -199,4 +193,46 @@ input {
 
 .savings-calc-button:active {
   box-shadow: none;
+}
+
+
+.task-desc {
+  font-size: 12px;
+  text-align: left;
+}
+
+.more-info-icon {
+  position: relative;
+  display: inline-block;
+}
+
+.more-info-icon .tip-text {
+  visibility: hidden;
+  width: 180px;
+  background-color: white;
+  text-align: center;
+  border-radius: 6px;
+  padding: 10px;
+  color: black;
+  position: absolute;
+  z-index: 1;
+  top: -3px;
+  right: 115%;
+  font-size: 11px;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.1), 0 2px 5px rgba(0,0,0,0.2);
+}
+
+.more-info-icon:hover .tip-text {
+  visibility: visible;
+}
+
+.more-info-icon .tip-text::after {
+  content: " ";
+  position: absolute;
+  top: 15%;
+  left: 100%;
+  margin-top: -5px;
+  border-width: 5px;
+  border-style: solid;
+  border-color: transparent transparent transparent white;
 }
