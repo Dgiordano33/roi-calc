@@ -131,8 +131,11 @@ class App extends Component {
         <div className="App-body">
           <div class="container-flex">
             <div class="row">
-              <div class="col-md-12">
+              <div class="col-md-6">
                 <h1 class="display-1 ab-orange">SoapUI Pro ROI Calculator</h1>
+              </div>
+              <div class="col-md-6">
+                <h1 class="display-4">Pick SoapUI!</h1>
               </div>
 
               <div class="col-md-3">
