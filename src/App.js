@@ -135,7 +135,7 @@ class App extends Component {
                 <h1 class="display-1 ab-orange">SoapUI Pro ROI Calculator</h1>
               </div>
               <div class="col-md-6">
-                <h1 class="display-4">Pick SoapUI!</h1>
+                <h1 class="display-4">See how SoapUI Pro can help reduce test creation and maintenance times.</h1>
               </div>
 
               <div class="col-md-3">
