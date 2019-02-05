@@ -66,6 +66,14 @@ fill:#ff730b;
     text-align: left;   
   }
 
+
+  .h3, h3 {
+    font-size: 1.5rem;
+    color: #173647;
+    font-family: roboto mono;
+    font-weight: 700;
+}
+
   .ab-orange::after, .webinar-page .webinar-title::after {
     content: " ";
     background-color: #ff8f0f!important;
