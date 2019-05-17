@@ -132,12 +132,10 @@ class App extends Component {
           <div class="container-flex">
             <div class="row">
               <div class="col-md-6">
-                <h1 class="display-1 ab-orange">SoapUI Pro ROI Calculator</h1>
+                <h1 class="display-1 ab-orange text-left">ReadyAPI Platform</h1>
               </div>
-              <div class="col-md-6">
-                <h1 class="display-4">This is a demo.</h1>
-              </div>
-
+            </div>
+            <div class="row">
               <div class="col-md-3">
                 <div className="config-column">
                   <Organization
@@ -149,18 +147,18 @@ class App extends Component {
                   />
                 </div>
               </div>
-              <div class="col-md-6">
+              <div class="col-md-7">
                 <div className="project-column-container">
                   <Project 
                     orgSalaries = {this.state.orgSalaries}
                     orgCount = {this.state.orgCount}
                     orgTime = {this.state.orgTime}
-                    calculatorData = {CalculatorData}
+                    calsculatorData = {CalculatorData}
                     handleTimeChange = {this.handleTimeChange}
                   />
                 </div>
               </div>
-              <div class="col-md-3">
+              <div class="col-md-3 text-left">
                 <div className="savings-column-container">
                   <Savings 
                     savingsAmounts = {this.state.savingsAmounts}
