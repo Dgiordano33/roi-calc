@@ -1,5 +1,4 @@
 import React, { Component } from 'react';
-import logo from './SP_Logo_CLR_RGB_300dpi.png';
 import './App.css';
 import Organization from './Organization.js';
 import Project from './Project.js';
@@ -158,7 +157,7 @@ class App extends Component {
                   />
                 </div>
               </div>
-              <div class="col-md-3 text-left">
+              <div class="col-md-2 text-left">
                 <div className="savings-column-container">
                   <Savings 
                     savingsAmounts = {this.state.savingsAmounts}

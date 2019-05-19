@@ -52,7 +52,7 @@
             ]
         },
         {
-            "displayName": "QA Engineer",
+            "displayName": "QA-Engineer",
             "lookupName": "test",
             "defaultSalary": 75000,
             "defaultCount": 5,

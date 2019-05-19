@@ -74,8 +74,6 @@ const Project = props => {
 
             projectOutput.push(jobRow)
         }
-
-        
     }
 
     return (
